@@ -500,37 +500,37 @@ const App = () => {
         s1: {
             subjectSchedules: [],
             attendance: [
-                { id: 1, subject: 'Mathematics', total: 45, present: 42, percentage: 93.3, status: 'Excellent' },
-                { id: 2, subject: 'Physics', total: 40, present: 38, percentage: 95.0, status: 'Excellent' },
-                { id: 3, subject: 'Chemistry', total: 38, present: 30, percentage: 78.9, status: 'Average' },
-                { id: 4, subject: 'Computer Science', total: 50, present: 48, percentage: 96.0, status: 'Excellent' },
-                { id: 5, subject: 'English', total: 35, present: 33, percentage: 94.3, status: 'Good' }
+                { id: 1, subject: 'Transforms and Boundary Value Problems', total: 45, present: 42, percentage: 93.3, status: 'Excellent' },
+                { id: 2, subject: 'Solid State Devices', total: 40, present: 38, percentage: 95.0, status: 'Excellent' },
+                { id: 3, subject: 'Computer Organization and Architecture', total: 38, present: 30, percentage: 78.9, status: 'Average' },
+                { id: 4, subject: '	Social Engineering', total: 50, present: 48, percentage: 96.0, status: 'Excellent' },
+                { id: 5, subject: 'Digital logic Design', total: 35, present: 33, percentage: 94.3, status: 'Good' }
             ]
         },
         s2: {
             subjectSchedules: [],
             attendance: [
-                { id: 1, subject: 'Mathematics', total: 45, present: 35, percentage: 77.8, status: 'Poor' },
-                { id: 2, subject: 'Physics', total: 40, present: 32, percentage: 80.0, status: 'Average' },
-                { id: 3, subject: 'Biology', total: 42, present: 40, percentage: 95.2, status: 'Excellent' },
-                { id: 4, subject: 'Computer Science', total: 50, present: 45, percentage: 90.0, status: 'Good' },
-                { id: 5, subject: 'History', total: 30, present: 28, percentage: 93.3, status: 'Good' }
+                { id: 1, subject: 'Transforms and Boundary Value Problems', total: 45, present: 35, percentage: 77.8, status: 'Poor' },
+                { id: 2, subject: 'Solid State Devices', total: 40, present: 32, percentage: 80.0, status: 'Average' },
+                { id: 3, subject: 'Computer Organization and Architecture', total: 42, present: 40, percentage: 95.2, status: 'Excellent' },
+                { id: 4, subject: '	Social Engineering', total: 50, present: 45, percentage: 90.0, status: 'Good' },
+                { id: 5, subject: 'Digital logic Design', total: 30, present: 28, percentage: 93.3, status: 'Good' }
             ]
         },
         s3: {
             subjectSchedules: [],
             attendance: [
-                { id: 1, subject: 'Mathematics', total: 45, present: 40, percentage: 88.9, status: 'Good' },
-                { id: 2, subject: 'Physics', total: 40, present: 36, percentage: 90.0, status: 'Excellent' },
-                { id: 3, subject: 'Chemistry', total: 38, present: 34, percentage: 89.5, status: 'Good' },
-                { id: 4, subject: 'English', total: 35, present: 32, percentage: 91.4, status: 'Excellent' },
-                { id: 5, subject: 'Biology', total: 42, present: 38, percentage: 90.5, status: 'Excellent' }
+                { id: 1, subject: 'Transforms and Boundary Value Problems', total: 45, present: 40, percentage: 88.9, status: 'Good' },
+                { id: 2, subject: 'Solid State Devices', total: 40, present: 36, percentage: 90.0, status: 'Excellent' },
+                { id: 3, subject: 'Computer Organization and Architecture', total: 38, present: 34, percentage: 89.5, status: 'Good' },
+                { id: 4, subject: '	Social Engineering', total: 35, present: 32, percentage: 91.4, status: 'Excellent' },
+                { id: 5, subject: 'Digital logic Design', total: 42, present: 38, percentage: 90.5, status: 'Excellent' }
             ]
         }
     });
 
     const availableStaff = ['Dr. Smith', 'Prof. Johnson', 'Ms. Williams', 'Dr. Brown', 'Mr. Davis'];
-    const availableSubjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'English', 'History'];
+    const availableSubjects = ['Transforms and Boundary Value ProblemsTransforms and Boundary Value Problems', 'Solid State Devices', 'Computer Organization and Architecture', '	Social Engineering', 'Digital logic Design'];
 
     const timetableData = {
         'Day 1': ['AA / X', 'F / X', 'F', 'G', 'P6', 'P7', 'P8', 'P9', 'P10', 'L11', 'L12'],
