@@ -8,27 +8,43 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const studentCreds = { id: "student123", password: "studpass" };
-  const staffCreds = { id: "staff123", password: "staffpass" };
+  // Multiple student credentials
+  const studentCreds = [
+    { id: "s", password: "s" },
+    { id: "s2", password: "s2" },
+  ];
+
+  // Staff credentials
+  const staffCreds = { id: "t", password: "t" };
 
   const handleLogin = (e) => {
     e.preventDefault();
 
+    if (role === "student") {
+      // Check if entered student credentials exist
+      const student = studentCreds.find(
+        (s) => s.id === id && s.password === password
+      );
+      if (student) {
+        // ✅ Save current student ID in localStorage
+        localStorage.setItem("currentStudentId", student.id);
+
+        navigate("/student");
+        return;
+      }
+    }
+
     if (
-      role === "student" &&
-      id === studentCreds.id &&
-      password === studentCreds.password
-    ) {
-      navigate("/student");
-    } else if (
       role === "staff" &&
       id === staffCreds.id &&
       password === staffCreds.password
     ) {
       navigate("/staff");
-    } else {
-      setError("Invalid ID or Password for the selected role");
+      return;
     }
+
+    // If no match found
+    setError("Invalid ID or Password for the selected role");
   };
 
   return (
