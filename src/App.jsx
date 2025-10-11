@@ -529,7 +529,7 @@ const App = () => {
         }
     });
 
-    const availableStaff = ['Dr. Smith', 'Prof. Johnson', 'Ms. Williams', 'Dr. Brown', 'Mr. Davis'];
+    const availableStaff = ['Dr. Debanjan ','Dr. Sarkar', 'Dr. Parthiban', 'Dr. Karthik', 'Dr. Saurav D Praveen'];
     const availableSubjects = ['Transforms and Boundary Value ProblemsTransforms and Boundary Value Problems', 'Solid State Devices', 'Computer Organization and Architecture', '	Social Engineering', 'Digital logic Design'];
 
     const timetableData = {
