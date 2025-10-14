@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Calendar, User, BookOpen, Clock, LogOut, Plus, Trash2 } from 'lucide-react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; 
+import "swiper/css";
+
 
 
 const CalendarComponent = ({ onBack }) => {
@@ -367,6 +371,48 @@ const StudentDashboard = ({ loggedInUser, studentSelections, setCurrentView, han
                         </div>
                     </div>
                 </div>
+
+                    {/* events section */}
+
+                <div className="bg-blue-950 rounded-lg overflow-hidden">
+  <Swiper
+    spaceBetween={20}
+    slidesPerView={1}
+    loop={true}
+    autoplay={{
+      delay: 4000, // 4 seconds
+      disableOnInteraction: false,
+    }}
+    modules={[Autoplay]}
+  >
+    <SwiperSlide>
+      <img
+        src="https://i.ibb.co/JFgNhh8Q/f7701521-9d30-11f0-8a11-0af8bdd440e1.png"
+        alt="slide-1"
+        className="rounded-t-lg w-[370px] h-[175px] sm:w-full sm:h-[375px] object-contain backdrop-blur"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src="https://i.ibb.co/3yQfwHfV/6a008f1c-a33d-11f0-9ab6-de4dc72a51bd.jpg"
+        alt="slide-2"
+        className="rounded-t-lg w-[370px] h-[175px] sm:w-full sm:h-[375px] object-contain backdrop-blur"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src="https://i.ibb.co/n8mLcBg0/ddeec496-a427-11f0-a072-a679a528409b.jpg"
+        alt="slide-3"
+        className="rounded-t-lg w-[370px] h-[175px] sm:w-full sm:h-[375px] object-contain backdrop-blur"
+      />
+    </SwiperSlide>
+  </Swiper>
+</div>
+
+<br />
+
 
                 {/* --- ATTENDANCE SECTION (NEW) --- */}
                 <div className="bg-white rounded-xl shadow-lg p-8">
